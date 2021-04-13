@@ -124,12 +124,12 @@ color: black;
 
 ###  Pseudo Selectors part Two 
 
-~를 사용해 바로 뒤에 오는 형제 관계가 아닌 tag에도 스타일을 적용시킬 수 있다.
-많은 Pseudo selectors가 있다.
-tag[attribute="value"]을 통해 스타일을 적용시킬 수 있다.
-tag[attribute~="value"]으로 value를 포함하는 모든 tag에 스타일을 적용시킬 수 있다
+1. ~를 사용해 바로 뒤에 오는 형제 관계가 아닌 tag에도 스타일을 적용시킬 수 있다.
+   많은 Pseudo selectors가 있다.
+   tag[attribute="value"]을 통해 스타일을 적용시킬 수 있다.
+   tag[attribute~="value"]으로 value를 포함하는 모든 tag에 스타일을 적용시킬 수 있다
 
-tag안 속성
+2. tag안 속성
 
 *= "hello" 라고 하면 ㅁㄴㅇㄹㄴㅇㄹhelloㅁㄴㅇㄹㄴㅇㄹ 라고 줘도 선택이 가능하다
 ~= "hello" 라고 하면 앞뒤에 공백이 있는 상태에서 hello 인 경우만 선택이 가능하다.
