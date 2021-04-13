@@ -122,7 +122,7 @@ color: black;
 
 
 
-###  Pseudo Selectors part Two
+###  Pseudo Selectors part 2
 
 \- "~"는 span이 p의 형제인데, 바로 뒤에 오지 않을 때 쓸 수 있다.
 \- Attribute selectors 특성 선택자
