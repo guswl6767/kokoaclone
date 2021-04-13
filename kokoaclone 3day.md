@@ -122,17 +122,21 @@ color: black;
 
 
 
-###  Pseudo Selectors part Two 
+###  Pseudo Selectors part Two
 
-1. ~를 사용해 바로 뒤에 오는 형제 관계가 아닌 tag에도 스타일을 적용시킬 수 있다.
-   많은 Pseudo selectors가 있다.
-   tag[attribute="value"]을 통해 스타일을 적용시킬 수 있다.
-   tag[attribute~="value"]으로 value를 포함하는 모든 tag에 스타일을 적용시킬 수 있다
+\- "~"는 span이 p의 형제인데, 바로 뒤에 오지 않을 때 쓸 수 있다.
+\- Attribute selectors 특성 선택자
+\- 그냥 input과 required input이 있다면, input:required{}를 통해서, required input에만 속성을 적용시킬 수 있다.
+\- input{} 을 통해, [input 이름]에 해당하는 input 속성을 따로 줄 수 있다.
+\- 여기서, input[placeholder="First name"]은 First name에만 속성을 주지만, input[placeholder~="name"]은 name이 들어가는 모든 input에 속성을 부여할 수 있다.
+\- "~="은 name을 포함하고 있다는 의미가 되는 것이다.
+\- a[href$=".org"] → "$="는 ".org"로 끝나는 모든 anchor를 선택할 수 있다.
+\- attribute selectors를 이용하면, class를 지정할 필요 없이 CSS만으로 각각의 속성을 부여해줄 수 있다.
 
-2. tag안 속성
+(**덧붙이기**)
 
-*= "hello" 라고 하면 ㅁㄴㅇㄹㄴㅇㄹhelloㅁㄴㅇㄹㄴㅇㄹ 라고 줘도 선택이 가능하다
-~= "hello" 라고 하면 앞뒤에 공백이 있는 상태에서 hello 인 경우만 선택이 가능하다.
+*= "hello" 라고 하면 ㅁㄴㅇㄹㄴㅇㄹhelloㅁㄴㅇㄹㄴㅇㄹ 라고 줘도 선택되고요.
+~= "hello" 라고 하면 앞뒤에 공백이 있는 상태에서 hello 인 경우만 선택되요.
 
 ###  States
 
